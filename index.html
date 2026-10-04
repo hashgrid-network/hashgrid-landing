@@ -1,0 +1,1525 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  
+  <!-- SEO & Primary Meta Tags -->
+  <title>HashGrid Pro — Next-Gen Mobile Cloud Mining | 1 GRID = $0.01 USDT</title>
+  <meta name="title" content="HashGrid Pro — Next-Gen Mobile Cloud Mining Protocol" />
+  <meta name="description" content="Mine $GRID tokens with 24-hour offline accrual, zero battery drain, and non-custodial Web3 Secret Key security. Daily free 302.4 GRID cloud mining." />
+  <meta name="keywords" content="HashGrid Pro, Cloud Mining, Android APK, Web3 Secret Key, GRID Token, USDT Yield, Proof of Yield, PoY, Mobile Mining, Crypto Mining" />
+  <meta name="author" content="HashGrid Network" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://hashgrid.online/" />
+  <meta name="theme-color" content="#07090E" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hashgrid.online/" />
+  <meta property="og:title" content="HashGrid Pro — Next-Gen Mobile Cloud Mining Protocol" />
+  <meta property="og:description" content="🔥 Pre-Launch Phase • 1 GRID = $0.01 USDT. Daily 302.4 Free GRID Mining. Deploy 15% Monthly USDT Cloud Rigs." />
+  <meta property="og:image" content="https://hashgrid.online/og-preview.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="HashGrid Pro — Next-Gen Decentralized Cloud Mining" />
+  <meta name="twitter:description" content="🔥 Pre-Launch Phase • 1 GRID = $0.01 USDT. Download official APK (v1.0.0 - 27 MB) with non-custodial Web3 Secret Key." />
+
+  <!-- Favicon (Lightning Bolt SVG Data URI) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300F5A0'%3E%3Cpath d='M13 2L3 14h9l-1 8 10-12h-9l1-8z'/%3E%3C/svg%3E" />
+
+  <!-- Google Fonts: Inter, Syne, JetBrains Mono, Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&family=Syne:wght@700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- FontAwesome 6.5.1 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            deepBlack: '#07090E',
+            panelBg: '#0F141F',
+            slateDark: '#0B101B',
+            cyberBorder: '#1C2436',
+            neonGreen: '#00F5A0',
+            electricBlue: '#00D2FF',
+            cyberPurple: '#A855F7',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+            grotesk: ['Space Grotesk', 'sans-serif'],
+            syne: ['Syne', 'sans-serif'],
+          },
+          boxShadow: {
+            'glow-green': '0 0 30px -5px rgba(0, 245, 160, 0.35)',
+            'glow-cyan': '0 0 30px -5px rgba(0, 210, 255, 0.35)',
+            'glow-purple': '0 0 30px -5px rgba(168, 85, 247, 0.35)',
+          },
+          animation: {
+            'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            'float': 'float 6s ease-in-out infinite',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-8px)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Web3 Scrollbar */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #07090E; }
+    ::-webkit-scrollbar-thumb { background: #1C2436; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #00F5A0; }
+
+    /* Web3 Background Pattern */
+    .bg-grid-pattern {
+      background-image: radial-gradient(rgba(0, 245, 160, 0.08) 1px, transparent 1px), radial-gradient(rgba(0, 210, 255, 0.06) 1px, transparent 1px);
+      background-size: 32px 32px;
+      background-position: 0 0, 16px 16px;
+    }
+
+    .glass-card {
+      background: rgba(15, 20, 31, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid #1C2436;
+      box-shadow: 0 10px 35px -5px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    }
+
+    .glass-card-hover {
+      transition: all 0.25s ease;
+    }
+    .glass-card-hover:hover {
+      border-color: rgba(0, 245, 160, 0.4);
+      box-shadow: 0 15px 40px -5px rgba(0, 245, 160, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+      transform: translateY(-3px);
+    }
+
+    .glass-nav {
+      background: rgba(7, 9, 14, 0.92);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid #1C2436;
+    }
+
+    .text-gradient-neon {
+      background: linear-gradient(135deg, #00F5A0 0%, #00D2FF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Master Neon Download Button */
+    .btn-neon-primary {
+      background: linear-gradient(135deg, #00F5A0 0%, #00D2FF 100%);
+      position: relative;
+      overflow: hidden;
+      transition: all 0.25s ease;
+    }
+
+    .btn-neon-primary::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 200%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+      transform: skewX(-20deg);
+      transition: 0.6s;
+    }
+
+    .btn-neon-primary:hover::before {
+      left: 100%;
+    }
+
+    .btn-neon-primary:hover {
+      box-shadow: 0 0 35px rgba(0, 245, 160, 0.6), 0 0 20px rgba(0, 210, 255, 0.4);
+      transform: scale(1.02);
+      filter: brightness(1.08);
+    }
+
+    /* Range Slider Styling */
+    input[type=range] {
+      -webkit-appearance: none;
+      background: #1C2436;
+      border-radius: 9999px;
+      height: 8px;
+    }
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      height: 24px;
+      width: 24px;
+      border-radius: 50%;
+      background: #00F5A0;
+      border: 3px solid #07090E;
+      box-shadow: 0 0 14px #00F5A0;
+      cursor: pointer;
+      transition: transform 0.1s;
+    }
+    input[type=range]::-webkit-slider-thumb:hover {
+      transform: scale(1.15);
+      background: #00D2FF;
+      box-shadow: 0 0 18px #00D2FF;
+    }
+  </style>
+
+  <!-- Standalone Download & Toast Handler -->
+  <script>
+    const OFFICIAL_APK_URL = "https://github.com/hashgrid-network/hashgrid-proapp/releases/download/v1.0.0/HashGrid-Pro-v1.0.0.apk";
+    const OFFICIAL_DOMAIN = "hashgrid.online";
+    const GRID_PRICE = 0.01;
+    const DAILY_FREE_GRID = 302.4;
+    window.currentReferralCode = "";
+
+    function triggerDownload(e) {
+      if (window.navigator && window.navigator.clipboard && window.currentReferralCode) {
+        try {
+          window.navigator.clipboard.writeText(window.currentReferralCode);
+          showToast(`🎁 Sponsor Invite [${window.currentReferralCode}] auto-copied to clipboard! It will auto-apply when you open the app.`);
+        } catch(err) {
+          console.log(err);
+        }
+      } else {
+        showToast("⬇️ Starting download for HashGrid Pro v1.0.0 (27 MB)...");
+      }
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('global-toast');
+      const toastText = document.getElementById('toast-text');
+      if (toast && toastText) {
+        toastText.innerText = msg;
+        toast.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-4');
+        toast.classList.add('opacity-100', 'translate-y-0');
+        setTimeout(() => {
+          toast.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
+          toast.classList.remove('opacity-100', 'translate-y-0');
+        }, 3500);
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-deepBlack text-slate-100 font-sans antialiased min-h-screen flex flex-col selection:bg-neonGreen selection:text-black bg-grid-pattern relative overflow-x-hidden">
+
+  <!-- Ambient Glowing Backdrops -->
+  <div class="fixed top-0 left-1/4 -translate-x-1/2 w-96 h-96 bg-neonGreen/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+  <div class="fixed top-1/3 right-10 w-96 h-96 bg-electricBlue/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+  <div class="fixed bottom-10 left-1/2 -translate-x-1/2 w-[600px] h-[350px] bg-cyberPurple/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+  <!-- Dynamic Sponsor Referral Notification Strip (Shown if ?ref= is in URL) -->
+  <div id="referral-banner" class="hidden bg-gradient-to-r from-neonGreen via-electricBlue to-neonGreen text-black py-2 px-4 text-xs font-bold font-mono tracking-wide text-center relative z-50 shadow-lg">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-3">
+      <div class="flex items-center gap-2 mx-auto flex-wrap justify-center">
+        <i class="fa-solid fa-gift text-sm"></i>
+        <span>SPONSOR INVITE DETECTED:</span>
+        <span id="banner-ref-code" class="bg-black text-neonGreen px-2.5 py-0.5 rounded font-black tracking-wider uppercase">---</span>
+        <span>• Auto-applies on install for bonus cloud hashrate!</span>
+      </div>
+      <button onclick="document.getElementById('referral-banner').classList.add('hidden')" class="text-black/80 hover:text-black font-extrabold text-sm ml-2">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- HEADER / NAVBAR -->
+  <header class="sticky top-0 z-40 glass-nav transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand Logo -->
+        <a href="#" class="flex items-center gap-3.5 group focus:outline-none">
+          <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-neonGreen to-electricBlue p-[1.5px] shadow-glow-green group-hover:scale-105 transition-transform duration-300">
+            <div class="w-full h-full bg-[#07090E] rounded-2xl flex items-center justify-center">
+              <i class="fa-solid fa-bolt text-neonGreen text-xl group-hover:text-electricBlue transition-colors"></i>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <div class="flex items-center gap-2">
+              <span class="text-xl sm:text-2xl font-black font-syne tracking-wider text-white">
+                HASH<span class="text-gradient-neon">GRID</span> <span class="text-[10px] text-neonGreen font-mono uppercase px-1.5 py-0.5 rounded bg-neonGreen/10 border border-neonGreen/30">PRO</span>
+              </span>
+            </div>
+            <div class="flex items-center gap-1.5 mt-0.5">
+              <span class="relative flex h-2 w-2">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-neonGreen opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-neonGreen"></span>
+              </span>
+              <span class="text-[10px] font-mono text-slate-400 uppercase tracking-widest font-semibold">
+                Mainnet Live v1.0.0
+              </span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-300 font-mono">
+          <a href="#features" class="hover:text-neonGreen transition-colors flex items-center gap-1.5">
+            <i class="fa-solid fa-cubes-stacked text-xs text-slate-500"></i> App Features
+          </a>
+          <a href="#nodes" class="hover:text-neonGreen transition-colors flex items-center gap-1.5">
+            <i class="fa-solid fa-server text-xs text-slate-500"></i> Mining Rigs
+          </a>
+          <a href="#calculator" class="hover:text-neonGreen transition-colors text-neonGreen flex items-center gap-1.5">
+            <i class="fa-solid fa-calculator text-xs"></i> Yield Calculator
+          </a>
+          <a href="#install" class="hover:text-neonGreen transition-colors flex items-center gap-1.5">
+            <i class="fa-brands fa-android text-xs text-slate-500"></i> How to Install
+          </a>
+          <a href="#faq" class="hover:text-neonGreen transition-colors flex items-center gap-1.5">
+            <i class="fa-solid fa-circle-question text-xs text-slate-500"></i> FAQ
+          </a>
+        </nav>
+
+        <!-- Header Actions: Top Right Glowing CTA -->
+        <div class="hidden sm:flex items-center gap-4">
+          <a
+            href="https://github.com/hashgrid-network/hashgrid-proapp/releases/download/v1.0.0/HashGrid-Pro-v1.0.0.apk"
+            download="HashGrid-Pro-v1.0.0.apk"
+            target="_blank"
+            rel="noopener noreferrer"
+            onclick="triggerDownload(event)"
+            class="btn-neon-primary text-slate-950 font-black px-6 py-2.5 rounded-xl text-xs sm:text-sm font-syne uppercase tracking-wider flex items-center gap-2 shadow-glow-green"
+          >
+            <i class="fa-brands fa-android text-base"></i>
+            <span>DOWNLOAD APK</span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <div class="flex items-center gap-2 md:hidden">
+          <a
+            href="https://github.com/hashgrid-network/hashgrid-proapp/releases/download/v1.0.0/HashGrid-Pro-v1.0.0.apk"
+            download="HashGrid-Pro-v1.0.0.apk"
+            target="_blank"
+            rel="noopener noreferrer"
+            onclick="triggerDownload(event)"
+            class="btn-neon-primary text-slate-950 font-bold px-3 py-1.5 rounded-lg text-xs font-syne flex items-center gap-1.5"
+          >
+            <i class="fa-brands fa-android"></i>
+            <span>APK</span>
+          </a>
+          <button id="mobile-menu-btn" class="p-2.5 rounded-xl bg-slate-800/60 border border-slate-700 text-slate-300 hover:text-white focus:outline-none" aria-label="Toggle menu">
+            <i id="menu-icon" class="fa-solid fa-bars text-lg"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden glass-card border-x-0 border-b border-slate-800 px-6 py-5 space-y-4 font-mono text-sm animate-fadeIn">
+      <div class="flex flex-col space-y-3">
+        <a href="#features" onclick="closeMobileMenu()" class="text-slate-300 hover:text-neonGreen py-1 flex items-center gap-2">
+          <i class="fa-solid fa-cubes-stacked text-neonGreen w-5"></i> App Features
+        </a>
+        <a href="#nodes" onclick="closeMobileMenu()" class="text-slate-300 hover:text-neonGreen py-1 flex items-center gap-2">
+          <i class="fa-solid fa-server text-neonGreen w-5"></i> Mining Rigs
+        </a>
+        <a href="#calculator" onclick="closeMobileMenu()" class="text-neonGreen font-bold py-1 flex items-center gap-2">
+          <i class="fa-solid fa-calculator text-neonGreen w-5"></i> Yield Calculator
+        </a>
+        <a href="#install" onclick="closeMobileMenu()" class="text-slate-300 hover:text-neonGreen py-1 flex items-center gap-2">
+          <i class="fa-brands fa-android text-neonGreen w-5"></i> How to Install
+        </a>
+        <a href="#faq" onclick="closeMobileMenu()" class="text-slate-300 hover:text-neonGreen py-1 flex items-center gap-2">
+          <i class="fa-solid fa-circle-question text-neonGreen w-5"></i> FAQ
+        </a>
+      </div>
+
+      <div class="pt-4 border-t border-slate-800/80 flex flex-col gap-2.5">
+        <a
+          href="https://github.com/hashgrid-network/hashgrid-proapp/releases/download/v1.0.0/HashGrid-Pro-v1.0.0.apk"
+          download="HashGrid-Pro-v1.0.0.apk"
+          target="_blank"
+          rel="noopener noreferrer"
+          onclick="triggerDownload(event); closeMobileMenu();"
+          class="btn-neon-primary text-slate-950 font-black py-3 rounded-xl text-center text-sm font-syne uppercase tracking-wider flex items-center justify-center gap-2 shadow-glow-green"
+        >
+          <i class="fa-brands fa-android text-lg"></i>
+          <span>Download Android APK (v1.0.0)</span>
+        </a>
+        <div class="text-center text-[10px] text-slate-400 font-mono">
+          v1.0.0 • 27 MB • Android 8.0+ • SHA-256 Verified
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main class="flex-grow">
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-12 pb-20 sm:pt-20 sm:pb-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center overflow-hidden">
+      
+      <!-- Official Pre-Launch Badge -->
+      <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-neonGreen/40 bg-[#0F141F]/90 text-neonGreen text-xs sm:text-sm font-bold tracking-wider font-mono mb-8 shadow-glow-green animate-float">
+        <span class="flex h-2.5 w-2.5 relative">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-neonGreen opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-neonGreen"></span>
+        </span>
+        <span>🔥 Pre-Launch Phase • 1 GRID = $0.01 USDT • 302.4 Free GRID/Day</span>
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black font-syne tracking-tight leading-[1.1] text-white max-w-5xl mx-auto mb-6">
+        HashGrid Pro — <span class="text-gradient-neon">Next-Gen Mobile Cloud Mining</span>
+      </h1>
+
+      <!-- Subtext -->
+      <p class="text-slate-300 text-base sm:text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed font-normal">
+        Mine GRID token 24/7 directly from your Android phone with cloud-backed server sync, zero battery drain, and verified USDT payouts.
+      </p>
+
+      <!-- Primary Action Button (Centered & Prominent) -->
+      <div class="flex flex-col items-center justify-center max-w-xl mx-auto mb-10">
+        <a
+          href="https://github.com/hashgrid-network/hashgrid-proapp/releases/download/v1.0.0/HashGrid-Pro-v1.0.0.apk"
+          download="HashGrid-Pro-v1.0.0.apk"
+          target="_blank"
+          rel="noopener noreferrer"
+          onclick="triggerDownload(event)"
+          class="btn-neon-primary w-full text-slate-950 font-black px-8 py-4.5 rounded-2xl text-base sm:text-lg font-syne uppercase tracking-wider flex items-center justify-center gap-3.5 shadow-glow-green group cursor-pointer"
+        >
+          <div class="w-9 h-9 rounded-xl bg-black/15 flex items-center justify-center text-slate-950 font-bold text-xl group-hover:rotate-12 transition-transform">
+            <i class="fa-brands fa-android"></i>
+          </div>
+          <div class="text-left">
+            <div class="leading-none text-lg sm:text-xl font-extrabold">DOWNLOAD ANDROID APK</div>
+            <div class="text-[11px] font-mono font-bold text-slate-900/85 mt-1">v1.0.0 • 27 MB • Android 8.0+ • SHA-256 Verified</div>
+          </div>
+          <i class="fa-solid fa-arrow-down text-sm ml-2 group-hover:translate-y-1 transition-transform"></i>
+        </a>
+      </div>
+
+      <!-- Trust Badges Strip -->
+      <div class="flex items-center justify-center gap-6 sm:gap-10 text-xs font-mono text-slate-400 mb-16 flex-wrap">
+        <span class="flex items-center gap-2">
+          <i class="fa-solid fa-shield-halved text-neonGreen"></i> 100% Virus &amp; Bot Protected
+        </span>
+        <span class="flex items-center gap-2">
+          <i class="fa-solid fa-microchip text-electricBlue"></i> Zero CPU &amp; Battery Load
+        </span>
+        <span class="flex items-center gap-2">
+          <i class="fa-solid fa-key text-cyberPurple"></i> Non-Custodial Secret Key
+        </span>
+      </div>
+
+      <!-- FLOATING LIVE STATS / TELEMETRY GRID -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 max-w-5xl mx-auto text-left">
+        
+        <div class="glass-card glass-card-hover p-5 sm:p-6 rounded-2xl relative overflow-hidden group">
+          <div class="absolute top-0 right-0 w-24 h-24 bg-neonGreen/10 rounded-full blur-xl group-hover:bg-neonGreen/20 transition-all"></div>
+          <div class="flex items-center justify-between text-slate-400 text-xs font-mono uppercase mb-2">
+            <span>Pre-launch Price</span>
+            <i class="fa-solid fa-coins text-neonGreen"></i>
+          </div>
+          <div class="text-2xl sm:text-3xl font-black text-white font-mono tracking-tight">
+            $0.01 <span class="text-xs text-neonGreen font-bold">USDT</span>
+          </div>
+          <div class="text-[11px] text-neonGreen font-mono mt-1 flex items-center gap-1">
+            <i class="fa-solid fa-chart-line text-[10px]"></i> 1 GRID = 0.01 USDT Fixed
+          </div>
+        </div>
+
+        <div class="glass-card glass-card-hover p-5 sm:p-6 rounded-2xl relative overflow-hidden group">
+          <div class="absolute top-0 right-0 w-24 h-24 bg-electricBlue/10 rounded-full blur-xl group-hover:bg-electricBlue/20 transition-all"></div>
+          <div class="flex items-center justify-between text-slate-400 text-xs font-mono uppercase mb-2">
+            <span>Free Cloud Mining</span>
+            <i class="fa-solid fa-bolt text-electricBlue"></i>
+          </div>
+          <div class="text-2xl sm:text-3xl font-black text-white font-mono tracking-tight">
+            302.4 <span class="text-xs text-electricBlue font-bold">GRID/d</span>
+          </div>
+          <div class="text-[11px] text-slate-400 font-mono mt-1">
+            ~0.0007 GRID / second
+          </div>
+        </div>
+
+        <div class="glass-card glass-card-hover p-5 sm:p-6 rounded-2xl relative overflow-hidden group">
+          <div class="absolute top-0 right-0 w-24 h-24 bg-cyberPurple/10 rounded-full blur-xl group-hover:bg-cyberPurple/20 transition-all"></div>
+          <div class="flex items-center justify-between text-slate-400 text-xs font-mono uppercase mb-2">
+            <span>Monthly Yield</span>
+            <i class="fa-solid fa-percent text-cyberPurple"></i>
+          </div>
+          <div class="text-2xl sm:text-3xl font-black text-white font-mono tracking-tight">
+            15% <span class="text-xs text-cyberPurple font-bold">USDT</span>
+          </div>
+          <div class="text-[11px] text-neonGreen font-mono mt-1">
+            0.5% Daily for 200 Days
+          </div>
+        </div>
+
+        <div class="glass-card glass-card-hover p-5 sm:p-6 rounded-2xl relative overflow-hidden group">
+          <div class="absolute top-0 right-0 w-24 h-24 bg-neonGreen/10 rounded-full blur-xl group-hover:bg-neonGreen/20 transition-all"></div>
+          <div class="flex items-center justify-between text-slate-400 text-xs font-mono uppercase mb-2">
+            <span>Consensus</span>
+            <i class="fa-solid fa-network-wired text-neonGreen"></i>
+          </div>
+          <div class="text-2xl sm:text-3xl font-black text-white font-mono tracking-tight">
+            PoY <span class="text-xs text-neonGreen font-bold">Ledger</span>
+          </div>
+          <div class="text-[11px] text-slate-400 font-mono mt-1">
+            Time-Delta Firestore Sync
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- KEY FEATURES SECTION (4 EXACT PRODUCTION PILLARS) -->
+    <section id="features" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-[#1C2436]">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-neonGreen text-xs font-bold uppercase tracking-widest font-mono">
+          Core Production Architecture
+        </span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black font-syne text-white mt-2">
+          Engineered For HashGrid Pro v1.0.0
+        </h2>
+        <p class="text-slate-400 mt-4 text-base sm:text-lg">
+          No complicated crypto wallets or password vulnerabilities. HashGrid Pro provides direct non-custodial cloud access with automated yield settlements.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Pillar 1: Non-Custodial Web3 Secret Key -->
+        <div class="glass-card glass-card-hover p-7 rounded-3xl flex flex-col justify-between relative group transition-all duration-300">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-neonGreen/10 border border-neonGreen/30 flex items-center justify-center text-2xl text-neonGreen mb-6 shadow-glow-green group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-key"></i>
+            </div>
+            <div class="text-xs font-mono font-bold text-neonGreen uppercase tracking-wider mb-1">
+              Pillar 01 • Auth
+            </div>
+            <h3 class="text-xl font-bold font-syne text-white mb-3">
+              Non-Custodial Web3 Secret Key
+            </h3>
+            <p class="text-slate-300 text-sm leading-relaxed mb-4">
+              Deterministic 16-character format (<code class="text-neonGreen font-mono font-bold">HG-XXXX-XXXX-XXXX</code>). No passwords or email required—instant 1-click cloud account and balance restoration anywhere.
+            </p>
+          </div>
+          
+          <div class="pt-4 border-t border-[#1C2436]">
+            <div class="p-2.5 rounded-xl bg-[#07090E] border border-[#1C2436] font-mono text-[11px] text-electricBlue flex items-center justify-between">
+              <span class="truncate">HG-9F2B-9626-2B4D</span>
+              <i class="fa-solid fa-lock text-slate-500"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar 2: Hardware Device Anti-Bot Shield -->
+        <div class="glass-card glass-card-hover p-7 rounded-3xl flex flex-col justify-between relative group transition-all duration-300">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-electricBlue/10 border border-electricBlue/30 flex items-center justify-center text-2xl text-electricBlue mb-6 shadow-glow-cyan group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-robot"></i>
+            </div>
+            <div class="text-xs font-mono font-bold text-electricBlue uppercase tracking-wider mb-1">
+              Pillar 02 • Sybil Defense
+            </div>
+            <h3 class="text-xl font-bold font-syne text-white mb-3">
+              Hardware Device Anti-Bot Shield
+            </h3>
+            <p class="text-slate-300 text-sm leading-relaxed mb-4">
+              Enforces a strict limit of max 2 accounts per physical device via native <code class="text-electricBlue font-mono">ANDROID_ID</code> + Firestore cloud check to prevent multi-accounting emulator farms.
+            </p>
+          </div>
+
+          <div class="pt-4 border-t border-[#1C2436]">
+            <div class="flex items-center justify-between text-xs font-mono text-slate-400">
+              <span class="flex items-center gap-1.5 text-neonGreen">
+                <i class="fa-solid fa-circle-check"></i> Max 2 Accts / Device
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar 3: Real-Time Accrual Engine -->
+        <div class="glass-card glass-card-hover p-7 rounded-3xl flex flex-col justify-between relative group transition-all duration-300">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-cyberPurple/10 border border-cyberPurple/30 flex items-center justify-center text-2xl text-cyberPurple mb-6 shadow-glow-purple group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-bolt-lightning"></i>
+            </div>
+            <div class="text-xs font-mono font-bold text-cyberPurple uppercase tracking-wider mb-1">
+              Pillar 03 • Cloud Engine
+            </div>
+            <h3 class="text-xl font-bold font-syne text-white mb-3">
+              Real-Time Accrual Engine
+            </h3>
+            <p class="text-slate-300 text-sm leading-relaxed mb-4">
+              Time-delta background yield accrual on Firestore. Mining calculations continue running uninterrupted in the cloud ledger even when the app is completely closed or your phone is off.
+            </p>
+          </div>
+
+          <div class="pt-4 border-t border-[#1C2436]">
+            <div class="flex items-center justify-between text-xs font-mono text-slate-400">
+              <span class="text-cyberPurple flex items-center gap-1.5">
+                <i class="fa-solid fa-battery-empty"></i> 0% Battery Drain
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar 4: Daily Lucky Wheel & Instant Ledger -->
+        <div class="glass-card glass-card-hover p-7 rounded-3xl flex flex-col justify-between relative group transition-all duration-300">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-yellow-400/10 border border-yellow-400/30 flex items-center justify-center text-2xl text-yellow-400 mb-6 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-dharmachakra"></i>
+            </div>
+            <div class="text-xs font-mono font-bold text-yellow-400 uppercase tracking-wider mb-1">
+              Pillar 04 • Payouts
+            </div>
+            <h3 class="text-xl font-bold font-syne text-white mb-3">
+              Daily Lucky Wheel &amp; Ledger
+            </h3>
+            <p class="text-slate-300 text-sm leading-relaxed mb-4">
+              Spin the in-app Lucky Wheel every 24h for bonus GRID tokens &amp; USDT. Automated instant withdrawal settlements supporting BEP-20 (BNB Smart Chain) &amp; TRC-20 (Tron).
+            </p>
+          </div>
+
+          <div class="pt-4 border-t border-[#1C2436]">
+            <div class="flex items-center justify-between text-xs font-mono text-slate-400">
+              <span class="text-yellow-400 flex items-center gap-1.5">
+                <i class="fa-solid fa-coins"></i> TRC20 + BEP20 Dual Sync
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- NODE HARDWARE SPECIFICATIONS (5 EXACT PRODUCTION RIGS) -->
+    <section id="nodes" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-[#1C2436]">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-neonGreen text-xs font-bold uppercase tracking-widest font-mono">
+          Fixed 15% Monthly Yield • 200 Days Lifecycle
+        </span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black font-syne text-white mt-2">
+          Enterprise Cloud Node Specifications
+        </h2>
+        <p class="text-slate-400 mt-4 text-base sm:text-lg">
+          Select and deploy dedicated cloud hardware nodes. All nodes follow a fixed <strong>15% Monthly USDT Yield (0.5% Daily)</strong> over a 200-day deployment lifecycle.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-16">
+        
+        <!-- Tier 1: Micro Miner ($10) -->
+        <div class="glass-card glass-card-hover p-5 rounded-3xl flex flex-col justify-between relative border-[#1C2436]">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-mono font-bold text-slate-400 uppercase">Tier 1</span>
+              <span class="text-[10px] font-mono text-neonGreen bg-neonGreen/10 px-2 py-0.5 rounded-full border border-neonGreen/30 font-bold">Starter</span>
+            </div>
+            <h3 class="text-lg font-bold font-syne text-white">Micro Miner</h3>
+            <div class="text-2xl font-black font-mono text-white mt-2">
+              $10 <span class="text-xs text-slate-400 font-sans font-normal">USDT</span>
+            </div>
+            <div class="text-xs text-neonGreen font-mono mt-0.5 font-bold">
+              = 1,000 GRID (@ $0.01)
+            </div>
+
+            <ul class="my-4 space-y-2 text-xs font-mono text-slate-300 border-t border-[#1C2436] pt-3">
+              <li class="flex justify-between items-center">
+                <span class="text-slate-400">Mining Power:</span>
+                <strong class="text-white font-bold">4 GH/s</strong>
+              </li>
+              <li class="flex justify-between items-center">
+                <span class="text-slate-400">Daily Yield (0.5%):</span>
+                <strong class="text-neonGreen font-bold">+$0.05 / day</strong>
+              </li>
+              <li class="flex justify-between items-center">
+                <span class="text-slate-400">Monthly Yield:</span>
+                <strong class="text-electricBlue font-bold">15% ($1.50 / mo)</strong>
+              </li>
+              <li class="flex justify-between items-center">
+                <span class="text-slate-400">200d Net ROI:</span>
+                <strong class="text-white font-bold">+$10.00 Profit</strong>
+              </li>
+              <li class="flex justify-between items-center">
+                <span class="text-slate-400">Total Return:</span>
+                <strong class="text-neonGreen font-bold">$20.00 (200%)</strong>
+              </li>
+            </ul>
+          </div>
+
+          <a
+            href="https://github.com/hashgrid-network/hashgrid-proapp/releases/download/v1.0.0/HashGrid-Pro-v1.0.0.apk"
+            download="HashGrid-Pro-v1.0.0.apk"
+            target="_blank"
+            rel="noopener noreferrer"
+            onclick="triggerDownload(event)"
+            class="w-full py-2.5 rounded-xl border border-neonGreen/40 bg-[#07090E] hover:bg-neonGreen hover:text-black text-neonGreen font-extrabold text-xs uppercase font-syne tracking-wider text-center transition duration-200"
+          >
+            Deploy ($10)
+          </a>
+        </div>
+
+        <!-- Tier 2: Starter Node ($25) -->
+        <div class="glass-card glass-card-hover p-5 rounded-3xl flex flex-col justify-between relative border-[#1C2436]">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-mono font-bold text-electricBlue uppercase">Tier 2</span>
+              <span class="text-[10px] font-mono text-electricBlue bg-electricBlue/10 px-2 py-0.5 rounded-full border border-electricBlue/30 font-bold">Popular</span>
+            </div>
+            <h3 class="text-lg font-bold font-syne text-white">Starter Node</h3>
+            <div class="text-2xl font-black font-mono text-white mt-2">
+              $25 <span class="text-xs text-slate-400 font-sans font-normal">USDT</span>
+            </div>
+            <div class="text-xs text-neonGreen font-mono mt-0.5 font-bold">
+              = 2,500 GRID (@ $0.01)
+            </div>
+
+            <ul class="my-4 space-y-2 text-xs font-mono text-slate-300 border-t border-[#1C2436] pt-3">
+              <li class="flex justify-between items-center">
+                <span class="text-slate-400">Mining Power:</span>
+                <strong class="text-neonGreen font-bold">10 GH/s</strong>
+              </li>
+              <li class="flex justify-between items-center">
+                <span class="text-slate-400">Daily Yield (0.5%):</span>
+                <strong class="text-neonGreen font-bold">+$0.125 / day</strong>
+              </li>
+              <li class="flex justify-between items-center">
+                <span class="text-slate-400">Monthly Yield:</span>
+                <strong class="text-electricBlue font-bold">15% ($3.75 / mo)</strong>
+              </li>
+              <li class="flex justify-between items-center">
+                <span class="text-slate-400">200d Net ROI:</span>
+                <strong class="text-white font-bold">+$25.00 Profit</strong>
+              </li>
+              <li class="flex justify-between items-center">
+                <span class="text-slate-400">Total Return:</span>
+                <strong class="text-neonGreen font-bold">$50.00 (200%)</strong>
+              </li>
+            </ul>
+          </div>
+
+          <a
+            href="https://github.com/hashgrid-network/hashgrid-proapp/releases/download/v1.0.0/HashGrid-Pro-v1.0.0.apk"
+            download="HashGrid-Pro-v1.0.0.apk"
+            target="_blank"
+            rel="noopener noreferrer"
+            onclick="triggerDownload(event)"
+            class="w-full py-2.5 rounded-xl border border-neonGreen/40 bg-[#07090E] hover:bg-neonGreen hover:text-black text-neonGreen font-extrabold text-xs uppercase font-syne tracking-wider text-center transition duration-200"
+          >
+            Deploy ($25)
+          </a>
+        </div>
+
+        <!-- Tier 3: Pro Rig ($100) -->
+        <div class="glass-card glass-card-hover p-5 rounded-3xl flex flex-col justify-between relative border-neonGreen/50 shadow-glow-green">
+          <div class="absolute -top-3 right-3 bg-gradient-to-r from-neonGreen to-electricBlue text-black text-[9px] font-black px-2.5 py-0.5 rounded-full uppercase tracking-wider font-mono shadow-md">
+            ⭐ Most Popular
+          </div>
+
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-mono font-bold text-neonGreen uppercase">Tier 3</span>
+              <span class="text-[10px] font-mono text-black bg-neonGreen px-2 py-0.5 rounded-full font-bold">Featured</span>
+            </div>
+            <h3 class="text-lg font-bold font-syne text-white">Pro Rig</h3>
+            <div class="text-2xl font-black font-mono text-white mt-2">
+              $100 <span class="text-xs text-slate-400 font-sans font-normal">USDT</span>
+            </div>
+            <div class="text-xs text-neonGreen font-mono mt-0.5 font-bold">
+              = 10,000 GRID (@ $0.01)
+            </div>
+
+            <ul class="my-4 space-y-2 text-xs font-mono text-slate-300 border-t border-[#1C2436] pt-3">
+              <li class="flex justify-between items-center">
+                <span class="text-slate-400">Mining Power:</span>
+                <strong class="text-neonGreen font-bold">40 GH/s</strong>
+              </li>
+              <li class="flex justify-between items-center">
+                <span class="text-slate-400">Daily Yield (0.5%):</span>
+                <strong class="text-neonGreen font-bold">+$0.50 / day</strong>
+              </li>
+              <li class="flex justify-between items-center">
+                <span class="text-slate-400">Monthly Yield:</span>
+                <strong class="text-electricBlue font-bold">15% ($15.00 / mo)</strong>
+              </li>
+              <li class="flex justify-between items-center">
+                <span class="text-slate-400">200d Net ROI:</span>
+                <strong class="text-white font-bold">+$100.00 Profit</strong>
+              </li>
+              <li class="flex justify-between items-center">
+                <span class="text-slate-400">Total Return:</span>
+                <strong class="text-neonGreen font-bold">$200.00 (200%)</strong>
+              </li>
+            </ul>
+          </div>
+
+          <a
+            href="https://github.com/hashgrid-network/hashgrid-proapp/releases/download/v1.0.0/HashGrid-Pro-v1.0.0.apk"
+            download="HashGrid-Pro-v1.0.0.apk"
+            target="_blank"
+            rel="noopener noreferrer"
+            onclick="triggerDownload(event)"
+            class="btn-neon-primary w-full py-2.5 rounded-xl text-slate-950 font-black text-xs uppercase font-syne tracking-wider text-center shadow-glow-green"
+          >
+            Deploy ($100)
+          </a>
+        </div>
+
+        <!-- Tier 4: Master Node ($500) -->
+        <div class="glass-card glass-card-hover p-5 rounded-3xl flex flex-col justify-between relative border-[#1C2436]">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-mono font-bold text-cyberPurple uppercase">Tier 4</span>
+              <span class="text-[10px] font-mono text-cyberPurple bg-cyberPurple/10 px-2 py-0.5 rounded-full border border-cyberPurple/30 font-bold">High Yield</span>
+            </div>
+            <h3 class="text-lg font-bold font-syne text-white">Master Node</h3>
+            <div class="text-2xl font-black font-mono text-white mt-2">
+              $500 <span class="text-xs text-slate-400 font-sans font-normal">USDT</span>
+            </div>
+            <div class="text-xs text-cyberPurple font-mono mt-0.5 font-bold">
+              = 50,000 GRID (@ $0.01)
+            </div>
+
+            <ul class="my-4 space-y-2 text-xs font-mono text-slate-300 border-t border-[#1C2436] pt-3">
+              <li class="flex justify-between items-center">
+                <span class="text-slate-400">Mining Power:</span>
+                <strong class="text-white font-bold">200 GH/s</strong>
+              </li>
+              <li class="flex justify-between items-center">
+                <span class="text-slate-400">Daily Yield (0.5%):</span>
+                <strong class="text-neonGreen font-bold">+$2.50 / day</strong>
+              </li>
+              <li class="flex justify-between items-center">
+                <span class="text-slate-400">Monthly Yield:</span>
+                <strong class="text-cyberPurple font-bold">15% ($75.00 / mo)</strong>
+              </li>
+              <li class="flex justify-between items-center">
+                <span class="text-slate-400">200d Net ROI:</span>
+                <strong class="text-white font-bold">+$500.00 Profit</strong>
+              </li>
+              <li class="flex justify-between items-center">
+                <span class="text-slate-400">Total Return:</span>
+                <strong class="text-neonGreen font-bold">$1,000.00 (200%)</strong>
+              </li>
+            </ul>
+          </div>
+
+          <a
+            href="https://github.com/hashgrid-network/hashgrid-proapp/releases/download/v1.0.0/HashGrid-Pro-v1.0.0.apk"
+            download="HashGrid-Pro-v1.0.0.apk"
+            target="_blank"
+            rel="noopener noreferrer"
+            onclick="triggerDownload(event)"
+            class="w-full py-2.5 rounded-xl border border-cyberPurple/50 bg-[#07090E] hover:bg-cyberPurple hover:text-white text-cyberPurple font-extrabold text-xs uppercase font-syne tracking-wider text-center transition duration-200"
+          >
+            Deploy ($500)
+          </a>
+        </div>
+
+        <!-- Tier 5: Elite Hardware Cluster ($1,000) -->
+        <div class="glass-card glass-card-hover p-5 rounded-3xl flex flex-col justify-between relative border-[#1C2436]">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-mono font-bold text-yellow-400 uppercase">Tier 5</span>
+              <span class="text-[10px] font-mono text-yellow-400 bg-yellow-400/10 px-2 py-0.5 rounded-full border border-yellow-400/30 font-bold">Enterprise</span>
+            </div>
+            <h3 class="text-lg font-bold font-syne text-white">Elite Cluster</h3>
+            <div class="text-2xl font-black font-mono text-white mt-2">
+              $1,000 <span class="text-xs text-slate-400 font-sans font-normal">USDT</span>
+            </div>
+            <div class="text-xs text-yellow-400 font-mono mt-0.5 font-bold">
+              = 100,000 GRID (@ $0.01)
+            </div>
+
+            <ul class="my-4 space-y-2 text-xs font-mono text-slate-300 border-t border-[#1C2436] pt-3">
+              <li class="flex justify-between items-center">
+                <span class="text-slate-400">Mining Power:</span>
+                <strong class="text-yellow-400 font-bold">400 GH/s</strong>
+              </li>
+              <li class="flex justify-between items-center">
+                <span class="text-slate-400">Daily Yield (0.5%):</span>
+                <strong class="text-neonGreen font-bold">+$5.00 / day</strong>
+              </li>
+              <li class="flex justify-between items-center">
+                <span class="text-slate-400">Monthly Yield:</span>
+                <strong class="text-yellow-400 font-bold">15% ($150.00 / mo)</strong>
+              </li>
+              <li class="flex justify-between items-center">
+                <span class="text-slate-400">200d Net ROI:</span>
+                <strong class="text-white font-bold">+$1,000.00 Profit</strong>
+              </li>
+              <li class="flex justify-between items-center">
+                <span class="text-slate-400">Total Return:</span>
+                <strong class="text-neonGreen font-bold">$2,000.00 (200%)</strong>
+              </li>
+            </ul>
+          </div>
+
+          <a
+            href="https://github.com/hashgrid-network/hashgrid-proapp/releases/download/v1.0.0/HashGrid-Pro-v1.0.0.apk"
+            download="HashGrid-Pro-v1.0.0.apk"
+            target="_blank"
+            rel="noopener noreferrer"
+            onclick="triggerDownload(event)"
+            class="w-full py-2.5 rounded-xl border border-yellow-500/50 bg-[#07090E] hover:bg-yellow-400 hover:text-black text-yellow-400 font-extrabold text-xs uppercase font-syne tracking-wider text-center transition duration-200"
+          >
+            Deploy ($1,000)
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- INTERACTIVE YIELD CALCULATOR (Matching App Production Formula) -->
+    <section id="calculator" class="py-20 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto border-t border-[#1C2436]">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-neonGreen/30 bg-[#0F141F] text-neonGreen text-xs font-mono font-bold uppercase tracking-wider mb-4 shadow-sm">
+          <i class="fa-solid fa-calculator text-xs"></i>
+          <span>5 Production Tiers • 15% Monthly Yield</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black font-syne text-white mt-2">
+          Cloud Mining Profit Calculator
+        </h2>
+        <p class="text-slate-400 mt-3 text-base">
+          Formula: <strong>(Investment USDT × 15% / 30)</strong> per day = 0.5% daily yield + Free Mining (<strong>302.4 GRID/day</strong> @ $0.01 = $3.024/day).
+        </p>
+      </div>
+
+      <div class="glass-card p-6 sm:p-10 rounded-3xl border border-neonGreen/30 shadow-2xl relative overflow-hidden">
+        
+        <!-- Background ambient blurs -->
+        <div class="absolute -top-10 -right-10 w-60 h-60 bg-electricBlue/15 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-10 -left-10 w-60 h-60 bg-neonGreen/15 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="grid lg:grid-cols-12 gap-8 items-center relative z-10">
+          
+          <!-- Left Controls Column (Slider & Presets) -->
+          <div class="lg:col-span-7 space-y-6">
+            
+            <div class="flex items-center justify-between">
+              <label for="usdt-slider" class="text-sm font-bold font-mono text-slate-300 uppercase tracking-wider flex items-center gap-1.5">
+                <i class="fa-solid fa-microchip text-neonGreen"></i>
+                <span>USDT Hardware Allocation</span>
+              </label>
+              <div class="flex items-center gap-1.5 px-4 py-1.5 rounded-xl bg-[#07090E] border border-neonGreen/40 font-mono text-lg sm:text-xl font-extrabold text-neonGreen">
+                <span>$</span>
+                <span id="slider-display-val">100</span>
+                <span class="text-xs text-slate-400 font-normal">USDT</span>
+              </div>
+            </div>
+
+            <!-- Slider Control (Range: 10 to 1,000 USDT) -->
+            <div class="space-y-2">
+              <input
+                id="usdt-slider"
+                type="range"
+                min="10"
+                max="1000"
+                step="5"
+                value="100"
+                class="w-full cursor-pointer accent-neonGreen"
+                oninput="updateCalculator(this.value)"
+              />
+              <div class="flex justify-between text-[11px] font-mono text-slate-500">
+                <span>Min: $10</span>
+                <span>$25</span>
+                <span>$100</span>
+                <span>$500</span>
+                <span>Max: $1,000</span>
+              </div>
+            </div>
+
+            <!-- Quick Preset Buttons [ $10, $25, $100, $500, $1,000 ] -->
+            <div>
+              <div class="text-xs font-mono text-slate-400 mb-2.5">Quick Rig Presets:</div>
+              <div class="grid grid-cols-5 gap-2">
+                <button type="button" onclick="setSliderValue(10)" class="py-2.5 px-2 rounded-xl bg-[#07090E] hover:bg-neonGreen hover:text-black border border-[#1C2436] text-xs font-mono font-bold transition cursor-pointer">
+                  $10
+                </button>
+                <button type="button" onclick="setSliderValue(25)" class="py-2.5 px-2 rounded-xl bg-[#07090E] hover:bg-neonGreen hover:text-black border border-[#1C2436] text-xs font-mono font-bold transition cursor-pointer">
+                  $25
+                </button>
+                <button type="button" onclick="setSliderValue(100)" class="py-2.5 px-2 rounded-xl bg-neonGreen text-black font-extrabold border border-neonGreen text-xs font-mono transition cursor-pointer shadow-sm">
+                  $100
+                </button>
+                <button type="button" onclick="setSliderValue(500)" class="py-2.5 px-2 rounded-xl bg-[#07090E] hover:bg-neonGreen hover:text-black border border-[#1C2436] text-xs font-mono font-bold transition cursor-pointer">
+                  $500
+                </button>
+                <button type="button" onclick="setSliderValue(1000)" class="py-2.5 px-2 rounded-xl bg-[#07090E] hover:bg-neonGreen hover:text-black border border-[#1C2436] text-xs font-mono font-bold transition cursor-pointer">
+                  $1,000
+                </button>
+              </div>
+            </div>
+
+            <!-- Lifecycle Duration Buttons (30d, 60d, 100d, 200d) -->
+            <div>
+              <div class="text-xs font-mono text-slate-400 mb-2.5">Deployment Duration Lifecycle:</div>
+              <div class="grid grid-cols-4 gap-2">
+                <button type="button" id="dur-btn-30" onclick="setDuration(30)" class="py-2.5 px-1 rounded-xl bg-[#07090E] border border-[#1C2436] text-xs font-mono font-bold transition text-slate-300 cursor-pointer">
+                  30 Days
+                </button>
+                <button type="button" id="dur-btn-60" onclick="setDuration(60)" class="py-2.5 px-1 rounded-xl bg-[#07090E] border border-[#1C2436] text-xs font-mono font-bold transition text-slate-300 cursor-pointer">
+                  60 Days
+                </button>
+                <button type="button" id="dur-btn-100" onclick="setDuration(100)" class="py-2.5 px-1 rounded-xl bg-[#07090E] border border-[#1C2436] text-xs font-mono font-bold transition text-slate-300 cursor-pointer">
+                  100 Days
+                </button>
+                <button type="button" id="dur-btn-200" onclick="setDuration(200)" class="py-2.5 px-1 rounded-xl bg-electricBlue/20 border border-electricBlue text-xs font-mono font-bold text-electricBlue shadow-glow-cyan cursor-pointer">
+                  200 Days (Max)
+                </button>
+              </div>
+            </div>
+
+            <!-- Free Mining Checkbox Toggle -->
+            <div class="p-3.5 rounded-2xl bg-[#07090E] border border-[#1C2436] flex items-center justify-between text-xs font-mono">
+              <span class="text-slate-300 flex items-center gap-2">
+                <i class="fa-solid fa-bolt text-neonGreen"></i>
+                <span>Include Daily Free Mining (+302.4 GRID / 24h)</span>
+              </span>
+              <input
+                id="calc-free-check"
+                type="checkbox"
+                checked
+                onchange="updateCalculator(document.getElementById('usdt-slider').value)"
+                class="w-4 h-4 accent-neonGreen cursor-pointer"
+              />
+            </div>
+
+          </div>
+
+          <!-- Right Results Column -->
+          <div class="lg:col-span-5 p-6 rounded-2xl bg-[#07090E] border border-[#1C2436] flex flex-col justify-between space-y-6 shadow-inner">
+            
+            <div class="space-y-4">
+              <div class="flex justify-between items-center text-xs font-mono font-bold text-slate-400 uppercase tracking-wider pb-2 border-b border-[#1C2436]">
+                <span class="flex items-center gap-1.5 text-neonGreen">
+                  <span class="w-2 h-2 rounded-full bg-neonGreen animate-ping"></span>
+                  <span>Dual Payout Forecast</span>
+                </span>
+                <span class="text-slate-400">1 GRID = $0.01</span>
+              </div>
+
+              <!-- Daily Node Yield -->
+              <div class="flex justify-between items-center p-2.5 rounded-xl bg-[#0F141F] border border-[#1C2436]">
+                <div>
+                  <div class="text-xs text-slate-400 font-mono">Daily Node Yield (0.5%/d)</div>
+                  <div class="text-[11px] text-slate-500 font-mono">Fixed 15% Monthly Rate</div>
+                </div>
+                <div class="text-right">
+                  <div class="text-lg font-black font-mono text-neonGreen" id="calc-daily-node">+$0.50 USDT</div>
+                </div>
+              </div>
+
+              <!-- Free Mining Yield -->
+              <div class="flex justify-between items-center p-2.5 rounded-xl bg-[#0F141F] border border-[#1C2436]" id="free-yield-row">
+                <div>
+                  <div class="text-xs text-slate-400 font-mono">Daily Free Cloud Mining</div>
+                  <div class="text-[11px] text-electricBlue font-mono">+302.4 GRID / 24h</div>
+                </div>
+                <div class="text-right">
+                  <div class="text-lg font-black font-mono text-electricBlue" id="calc-daily-free">+$3.024 USDT</div>
+                </div>
+              </div>
+
+              <!-- Total Combined Daily Output -->
+              <div class="flex justify-between items-center p-3 rounded-xl bg-neonGreen/10 border border-neonGreen/40">
+                <div>
+                  <div class="text-xs text-white font-mono font-bold">Total Daily Output Value</div>
+                  <div class="text-[11px] text-slate-400 font-mono" id="calc-daily-equiv">352.4 GRID equiv.</div>
+                </div>
+                <div class="text-right">
+                  <div class="text-xl font-black font-mono text-neonGreen" id="calc-daily-total">+$3.52 USDT</div>
+                </div>
+              </div>
+
+              <!-- Total Lifecycle Projected Return -->
+              <div class="pt-2 border-t border-[#1C2436] flex justify-between items-center text-xs font-mono">
+                <span class="text-slate-400" id="calc-cycle-label">Total Return (200 Days):</span>
+                <span id="calc-total-return" class="text-neonGreen font-bold text-sm">$804.80 USDT (+705% ROI)</span>
+              </div>
+            </div>
+
+            <!-- Deploy Node CTA -->
+            <a
+              href="https://github.com/hashgrid-network/hashgrid-proapp/releases/download/v1.0.0/HashGrid-Pro-v1.0.0.apk"
+              download="HashGrid-Pro-v1.0.0.apk"
+              target="_blank"
+              rel="noopener noreferrer"
+              onclick="triggerDownload(event)"
+              class="btn-neon-primary w-full py-3.5 rounded-xl text-slate-950 font-black text-xs uppercase font-syne tracking-wider text-center shadow-glow-green flex items-center justify-center gap-2 cursor-pointer"
+            >
+              <span>Download App &amp; Deploy Node</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- 4-STEP SIMPLE INSTALLATION GUIDE -->
+    <section id="install" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-[#1C2436]">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-neonGreen text-xs font-bold uppercase tracking-widest font-mono">
+          Fast Android Deployment
+        </span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black font-syne text-white mt-2">
+          How to Install in 4 Simple Steps
+        </h2>
+        <p class="text-slate-400 mt-4 text-base sm:text-lg">
+          Zero email registration, zero passwords. Start cloud mining 302.4 free GRID daily in less than 60 seconds.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Step 1 -->
+        <div class="glass-card p-6 rounded-3xl flex flex-col justify-between relative group hover:border-neonGreen/50 transition duration-300">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-neonGreen/15 text-neonGreen font-black font-mono text-xl flex items-center justify-center mb-6 border border-neonGreen/30">
+              01
+            </div>
+            <div class="text-xs font-mono font-bold text-neonGreen uppercase mb-1">Step 01</div>
+            <h3 class="text-lg font-bold font-syne text-white mb-2">Download APK</h3>
+            <p class="text-slate-300 text-sm leading-relaxed mb-4">
+              Tap "DOWNLOAD ANDROID APK" above to download the official release file (HashGrid-Pro-v1.0.0.apk, 27 MB) directly to your phone.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-[#1C2436] text-xs font-mono text-slate-400 flex items-center gap-1.5">
+            <i class="fa-solid fa-download text-neonGreen"></i> File Size: 27 MB • Android 8.0+
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="glass-card p-6 rounded-3xl flex flex-col justify-between relative group hover:border-electricBlue/50 transition duration-300">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-electricBlue/15 text-electricBlue font-black font-mono text-xl flex items-center justify-center mb-6 border border-electricBlue/30">
+              02
+            </div>
+            <div class="text-xs font-mono font-bold text-electricBlue uppercase mb-1">Step 02</div>
+            <h3 class="text-lg font-bold font-syne text-white mb-2">Allow Unknown Apps</h3>
+            <p class="text-slate-300 text-sm leading-relaxed mb-4">
+              When prompted by Android, select <strong class="text-white font-semibold">"Allow from this source"</strong> to complete installation.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-[#1C2436] text-xs font-mono text-slate-400 flex items-center gap-1.5">
+            <i class="fa-solid fa-shield-halved text-electricBlue"></i> 100% Virus &amp; Malware Free
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="glass-card p-6 rounded-3xl flex flex-col justify-between relative group hover:border-cyberPurple/50 transition duration-300">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-cyberPurple/15 text-cyberPurple font-black font-mono text-xl flex items-center justify-center mb-6 border border-cyberPurple/30">
+              03
+            </div>
+            <div class="text-xs font-mono font-bold text-cyberPurple uppercase mb-1">Step 03</div>
+            <h3 class="text-lg font-bold font-syne text-white mb-2">Backup Secret Key</h3>
+            <p class="text-slate-300 text-sm leading-relaxed mb-4">
+              Open HashGrid Pro and backup your 16-character Secret Key (<code>HG-XXXX-XXXX-XXXX</code>). Set your 4-digit PIN for instant access.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-[#1C2436] text-xs font-mono text-slate-400 flex items-center gap-1.5">
+            <i class="fa-solid fa-key text-cyberPurple"></i> 1-Click Restore Anywhere
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="glass-card p-6 rounded-3xl flex flex-col justify-between relative group hover:border-neonGreen/50 transition duration-300">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-neonGreen/15 text-neonGreen font-black font-mono text-xl flex items-center justify-center mb-6 border border-neonGreen/30">
+              04
+            </div>
+            <div class="text-xs font-mono font-bold text-neonGreen uppercase mb-1">Step 04</div>
+            <h3 class="text-lg font-bold font-syne text-white mb-2">Tap 'Start Mining'</h3>
+            <p class="text-slate-300 text-sm leading-relaxed mb-4">
+              Tap the power button to activate your first free 24-hour cycle (302.4 GRID) or deploy dedicated hardware rigs with 15% monthly USDT yields.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-[#1C2436] text-xs font-mono text-slate-400 flex items-center gap-1.5">
+            <i class="fa-solid fa-bolt text-neonGreen"></i> Zero Local Battery Load
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- FAQ SECTION (ACCORDION STYLE) -->
+    <section id="faq" class="py-20 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto border-t border-[#1C2436]">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-cyberPurple text-xs font-bold uppercase tracking-widest font-mono">
+          Knowledge Base
+        </span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black font-syne text-white mt-2">
+          Frequently Asked Questions
+        </h2>
+        <p class="text-slate-400 mt-3 text-base">
+          Everything you need to know about the HashGrid Pro v1.0.0 app architecture, cloud yields, and device security.
+        </p>
+      </div>
+
+      <div class="space-y-4 font-sans" id="faq-accordion">
+        
+        <!-- FAQ Item 1 -->
+        <div class="glass-card rounded-2xl border border-[#1C2436] overflow-hidden transition-all duration-200">
+          <button
+            type="button"
+            onclick="toggleFaq(1)"
+            class="w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 font-bold text-base sm:text-lg text-white hover:text-neonGreen transition focus:outline-none cursor-pointer"
+          >
+            <span>Is HashGrid Pro free to start?</span>
+            <i id="faq-icon-1" class="fa-solid fa-chevron-down text-sm text-neonGreen transition-transform duration-300"></i>
+          </button>
+          <div id="faq-answer-1" class="hidden px-5 sm:px-6 pb-6 text-slate-300 text-sm sm:text-base leading-relaxed border-t border-[#1C2436] pt-4">
+            Yes! Every user receives free 24-hour cloud mining sessions yielding <strong>302.4 GRID tokens per day</strong> (~0.0007 GRID/second). You can also spin the Daily Lucky Wheel for bonus tokens and USDT rewards.
+          </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="glass-card rounded-2xl border border-[#1C2436] overflow-hidden transition-all duration-200">
+          <button
+            type="button"
+            onclick="toggleFaq(2)"
+            class="w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 font-bold text-base sm:text-lg text-white hover:text-neonGreen transition focus:outline-none cursor-pointer"
+          >
+            <span>What happens if my phone dies or loses internet?</span>
+            <i id="faq-icon-2" class="fa-solid fa-chevron-down text-sm text-neonGreen transition-transform duration-300"></i>
+          </button>
+          <div id="faq-answer-2" class="hidden px-5 sm:px-6 pb-6 text-slate-300 text-sm sm:text-base leading-relaxed border-t border-[#1C2436] pt-4">
+            Mining does not execute locally on your smartphone processor. The Real-Time Accrual Engine calculates your rewards on Firestore cloud nodes using time-delta intervals. Even if your phone is turned off, your rewards accrue continuously.
+          </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="glass-card rounded-2xl border border-[#1C2436] overflow-hidden transition-all duration-200">
+          <button
+            type="button"
+            onclick="toggleFaq(3)"
+            class="w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 font-bold text-base sm:text-lg text-white hover:text-neonGreen transition focus:outline-none cursor-pointer"
+          >
+            <span>How do I restore my account on a new device?</span>
+            <i id="faq-icon-3" class="fa-solid fa-chevron-down text-sm text-neonGreen transition-transform duration-300"></i>
+          </button>
+          <div id="faq-answer-3" class="hidden px-5 sm:px-6 pb-6 text-slate-300 text-sm sm:text-base leading-relaxed border-t border-[#1C2436] pt-4">
+            Simply enter your 16-character Web3 Secret Key (<code class="text-neonGreen font-mono bg-[#07090E] px-1.5 py-0.5 rounded">HG-XXXX-XXXX-XXXX</code>) on any Android device to immediately restore your full balance, active hardware nodes, and team referral trees.
+          </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="glass-card rounded-2xl border border-[#1C2436] overflow-hidden transition-all duration-200">
+          <button
+            type="button"
+            onclick="toggleFaq(4)"
+            class="w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 font-bold text-base sm:text-lg text-white hover:text-neonGreen transition focus:outline-none cursor-pointer"
+          >
+            <span>How do USDT deposits and withdrawals work?</span>
+            <i id="faq-icon-4" class="fa-solid fa-chevron-down text-sm text-neonGreen transition-transform duration-300"></i>
+          </button>
+          <div id="faq-answer-4" class="hidden px-5 sm:px-6 pb-6 text-slate-300 text-sm sm:text-base leading-relaxed border-t border-[#1C2436] pt-4">
+            HashGrid Pro supports automated deposits and withdrawals via Tron (TRC-20) and BNB Smart Chain (BEP-20). Deposits are credited automatically within minutes, and withdrawals are sent directly to your non-custodial crypto wallet address.
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="pt-16 pb-12 px-4 sm:px-6 lg:px-8 border-t border-[#1C2436] bg-[#07090E] text-xs text-slate-400 font-mono">
+    <div class="max-w-7xl mx-auto space-y-12">
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        
+        <!-- Column 1: Brand & Domain -->
+        <div class="space-y-4 md:col-span-2">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-xl bg-gradient-to-br from-neonGreen to-electricBlue flex items-center justify-center text-black font-black text-sm shadow-sm">
+              <i class="fa-solid fa-bolt"></i>
+            </div>
+            <span class="text-xl font-black font-syne text-white tracking-wider">
+              HASH<span class="text-gradient-neon">GRID</span> PRO
+            </span>
+          </div>
+          <p class="text-slate-400 text-xs sm:text-sm max-w-md leading-relaxed font-sans">
+            Next-generation Web3 mobile cloud mining protocol. Mine GRID token 24/7 with zero battery load, automated dual-network USDT settlements, and Web3 key security.
+          </p>
+          <div class="flex items-center gap-2 text-xs">
+            <span class="text-slate-500">Official Domain:</span>
+            <a href="https://hashgrid.online" target="_blank" rel="noopener noreferrer" class="text-electricBlue hover:underline font-bold">
+              hashgrid.online
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links & Releases -->
+        <div class="space-y-3">
+          <h4 class="text-xs font-bold text-white uppercase tracking-wider">Official Mobile Release</h4>
+          <ul class="space-y-2">
+            <li>
+              <a
+                href="https://github.com/hashgrid-network/hashgrid-proapp/releases/download/v1.0.0/HashGrid-Pro-v1.0.0.apk"
+                download="HashGrid-Pro-v1.0.0.apk"
+                target="_blank"
+                rel="noopener noreferrer"
+                onclick="triggerDownload(event)"
+                class="text-neonGreen hover:underline font-bold flex items-center gap-1.5"
+              >
+                <i class="fa-brands fa-android"></i>
+                <span>Download Android APK (v1.0.0)</span>
+              </a>
+            </li>
+            <li class="text-slate-400">Direct Download: HashGrid-Pro-v1.0.0.apk</li>
+            <li class="text-slate-500">Specs: v1.0.0 • 27 MB • Android 8.0+</li>
+            <li class="text-slate-500">Tokenomics: 1 GRID = $0.01 USDT</li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Community & Socials -->
+        <div class="space-y-3">
+          <h4 class="text-xs font-bold text-white uppercase tracking-wider">Community &amp; Concierge</h4>
+          <ul class="space-y-2.5">
+            <li>
+              <a href="https://t.me/hashgrid" target="_blank" rel="noopener noreferrer" class="hover:text-neonGreen transition flex items-center gap-2">
+                <i class="fa-brands fa-telegram text-electricBlue text-sm"></i>
+                <span>Telegram Official Channel</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.me/message/hashgrid" target="_blank" rel="noopener noreferrer" class="hover:text-neonGreen transition flex items-center gap-2">
+                <i class="fa-brands fa-whatsapp text-neonGreen text-sm"></i>
+                <span>WhatsApp Concierge Support</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://x.com/hashgrid" target="_blank" rel="noopener noreferrer" class="hover:text-neonGreen transition flex items-center gap-2">
+                <i class="fa-brands fa-x-twitter text-slate-400 text-sm"></i>
+                <span>X / Twitter Updates</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Legal Disclaimer & Copyright -->
+      <div class="pt-8 border-t border-[#1C2436] flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left text-[11px] text-slate-500">
+        <p>
+          Copyright © 2026 HashGrid Network (hashgrid.online). All rights reserved.
+        </p>
+        <div class="flex items-center gap-4 text-slate-400">
+          <span>Pre-Launch Tokenomics (1 GRID = $0.01)</span>
+          <span>•</span>
+          <span>Dual-Network TRC20/BEP20</span>
+          <span>•</span>
+          <span class="text-neonGreen">Zero Battery Architecture</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- GLOBAL TOAST NOTIFICATION POPUP -->
+  <div id="global-toast" class="fixed bottom-6 right-6 z-50 transform translate-y-4 opacity-0 pointer-events-none transition-all duration-300 max-w-sm">
+    <div class="p-4 rounded-2xl glass-card border border-neonGreen/50 shadow-glow-green flex items-center gap-3 text-xs font-mono text-white">
+      <div class="w-8 h-8 rounded-xl bg-neonGreen/20 text-neonGreen flex items-center justify-center shrink-0">
+        <i class="fa-solid fa-circle-check text-base"></i>
+      </div>
+      <div id="toast-text" class="leading-tight">
+        HashGrid Pro APK download initiated!
+      </div>
+    </div>
+  </div>
+
+  <!-- STANDALONE PRODUCTION VANILLA JAVASCRIPT -->
+  <script>
+    let currentDuration = 200;
+
+    // 1. Referral Parameter Detection (?ref= or ?r=)
+    document.addEventListener('DOMContentLoaded', () => {
+      try {
+        const urlParams = new URLSearchParams(window.location.search);
+        const ref = urlParams.get('ref') || urlParams.get('r');
+        if (ref && ref.trim().length > 0) {
+          window.currentReferralCode = ref.trim();
+          const banner = document.getElementById('referral-banner');
+          const bannerCode = document.getElementById('banner-ref-code');
+          if (banner && bannerCode) {
+            bannerCode.innerText = window.currentReferralCode;
+            banner.classList.remove('hidden');
+          }
+        }
+      } catch (e) {
+        console.warn('URL parsing error', e);
+      }
+
+      // Initialize Calculator with default $100 & 200 Days
+      updateCalculator(100);
+    });
+
+    // 2. Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+
+    if (mobileMenuBtn && mobileMenu) {
+      mobileMenuBtn.addEventListener('click', () => {
+        const isClosed = mobileMenu.classList.contains('hidden');
+        if (isClosed) {
+          mobileMenu.classList.remove('hidden');
+          menuIcon.classList.remove('fa-bars');
+          menuIcon.classList.add('fa-xmark');
+        } else {
+          mobileMenu.classList.add('hidden');
+          menuIcon.classList.remove('fa-xmark');
+          menuIcon.classList.add('fa-bars');
+        }
+      });
+    }
+
+    function closeMobileMenu() {
+      if (mobileMenu) {
+        mobileMenu.classList.add('hidden');
+        if (menuIcon) {
+          menuIcon.classList.remove('fa-xmark');
+          menuIcon.classList.add('fa-bars');
+        }
+      }
+    }
+
+    // 3. Dynamic Interactive Yield Calculator Engine
+    function setSliderValue(val) {
+      const slider = document.getElementById('usdt-slider');
+      if (slider) {
+        slider.value = val;
+        updateCalculator(val);
+      }
+    }
+
+    function setDuration(days) {
+      currentDuration = days;
+      [30, 60, 100, 200].forEach(d => {
+        const btn = document.getElementById(`dur-btn-${d}`);
+        if (btn) {
+          if (d === days) {
+            btn.className = 'py-2.5 px-1 rounded-xl bg-electricBlue/20 border border-electricBlue text-xs font-mono font-bold text-electricBlue shadow-glow-cyan cursor-pointer';
+          } else {
+            btn.className = 'py-2.5 px-1 rounded-xl bg-[#07090E] border border-[#1C2436] text-xs font-mono font-bold transition text-slate-300 cursor-pointer';
+          }
+        }
+      });
+      const slider = document.getElementById('usdt-slider');
+      updateCalculator(slider ? slider.value : 100);
+    }
+
+    function updateCalculator(usdtVal) {
+      const investment = parseFloat(usdtVal) || 100;
+      
+      // Update Display Val
+      const displayVal = document.getElementById('slider-display-val');
+      if (displayVal) {
+        displayVal.innerText = Number(investment).toLocaleString();
+      }
+
+      // Formula: (Investment USDT * 15% / 30) per day = 0.5% daily yield
+      const dailyNodeYield = investment * 0.005;
+      const totalNodeMiningYield = dailyNodeYield * currentDuration;
+
+      // Free Cloud Mining: 302.4 GRID per 24h (@ $0.01 = $3.024/day)
+      const freeCheckbox = document.getElementById('calc-free-check');
+      const includeFree = freeCheckbox ? freeCheckbox.checked : true;
+      const freeDailyGrid = includeFree ? 302.4 : 0;
+      const freeDailyUsdt = freeDailyGrid * 0.01;
+      const totalFreeUsdt = freeDailyUsdt * currentDuration;
+
+      // Combined Daily Metrics
+      const totalDailyUsdt = dailyNodeYield + freeDailyUsdt;
+      const totalDailyGrid = (dailyNodeYield / 0.01) + freeDailyGrid;
+
+      // Total Lifecycle Returns
+      const totalNetProfitUsdt = totalNodeMiningYield + totalFreeUsdt;
+      const totalGrossReturnUsdt = investment + totalNetProfitUsdt;
+
+      // Update UI Elements
+      const calcDailyNode = document.getElementById('calc-daily-node');
+      const formattedNodeYield = Number.isInteger(dailyNodeYield * 100) ? dailyNodeYield.toFixed(2) : dailyNodeYield.toFixed(3);
+      if (calcDailyNode) calcDailyNode.innerText = `+$${formattedNodeYield} USDT`;
+
+      const calcDailyFree = document.getElementById('calc-daily-free');
+      if (calcDailyFree) calcDailyFree.innerText = `+$${freeDailyUsdt.toFixed(3)} USDT`;
+
+      const freeRow = document.getElementById('free-yield-row');
+      if (freeRow) {
+        freeRow.style.display = includeFree ? 'flex' : 'none';
+      }
+
+      const calcDailyTotal = document.getElementById('calc-daily-total');
+      if (calcDailyTotal) calcDailyTotal.innerText = `+$${totalDailyUsdt.toFixed(2)} USDT`;
+
+      const calcDailyEquiv = document.getElementById('calc-daily-equiv');
+      if (calcDailyEquiv) calcDailyEquiv.innerText = `${totalDailyGrid.toFixed(1)} GRID equiv.`;
+
+      const calcCycleLabel = document.getElementById('calc-cycle-label');
+      if (calcCycleLabel) calcCycleLabel.innerText = `Total Return (${currentDuration} Days):`;
+
+      const calcTotalReturn = document.getElementById('calc-total-return');
+      if (calcTotalReturn) {
+        const roiPercent = ((totalNetProfitUsdt / investment) * 100).toFixed(0);
+        calcTotalReturn.innerText = `$${totalGrossReturnUsdt.toFixed(2)} USDT (+${roiPercent}% ROI)`;
+      }
+    }
+
+    // 4. FAQ Accordion Toggle Engine
+    function toggleFaq(index) {
+      const answer = document.getElementById(`faq-answer-${index}`);
+      const icon = document.getElementById(`faq-icon-${index}`);
+      
+      if (answer && icon) {
+        const isHidden = answer.classList.contains('hidden');
+        
+        // Close all other open items
+        for (let i = 1; i <= 4; i++) {
+          const a = document.getElementById(`faq-answer-${i}`);
+          const ic = document.getElementById(`faq-icon-${i}`);
+          if (a && ic) {
+            a.classList.add('hidden');
+            ic.classList.remove('rotate-180');
+          }
+        }
+
+        // Toggle clicked
+        if (isHidden) {
+          answer.classList.remove('hidden');
+          icon.classList.add('rotate-180');
+        }
+      }
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "HashGrid - Web3 Cloud Mining Infrastructure",
+  "description": "High-performance Web3 cloud mining infrastructure. Deploy high-hashrate enterprise mining nodes, automated yields, verifiable dual-network settlements, and instant referral commissions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
